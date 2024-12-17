@@ -1,7 +1,7 @@
 # Analyzing the Relationship Between IMDB Ratings with Film Indicators: Prediction & Diagnostics
 
 ## Introduction
-This project investigates the relationship between various film attributes and IMDB ratings, leveraging data from the IMDB film database. The dataset includes factors such as:
+This project investigates the relationship between various film attributes and IMDB ratings, using data from the IMDB film database. The dataset includes factors such as:
 - **Film ID**  
 - **Release Year**  
 - **Length**  
