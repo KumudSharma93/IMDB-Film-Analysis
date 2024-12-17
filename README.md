@@ -28,10 +28,6 @@ The key objectives of this study include:
 - **R Folder**:  
   - `project_analysis.qmd`: Quarto markdown file for Generalized Linear Models (GLM), data wrangling, and analysis.  
   - `project_report.pdf`: PDF version of the complete project report, including analysis and results.  
-
-- **Presentation**:  
-  - `project_presentation.pdf`: PDF version of the PowerPoint presentation summarizing the project objectives, methodology, key findings, and conclusions.  
-
 ---
 
 ## Tools and Technologies
