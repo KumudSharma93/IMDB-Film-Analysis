@@ -1,6 +1,6 @@
 # Analyzing the Relationship Between IMDB Ratings with Film Indicators: Prediction & Diagnostics
 
-## 1. Introduction
+## Introduction
 This project investigates the relationship between various film attributes and IMDB ratings, leveraging data from the IMDB film database. The dataset includes factors such as:
 - **Film ID**  
 - **Release Year**  
@@ -14,65 +14,51 @@ The central research question examines whether specific film attributes contribu
 
 ---
 
-## 2. Project Objectives
+## Project Objectives
 The key objectives of this study include:
-1. Performing **data wrangling** to clean and preprocess the dataset.  
-2. Conducting **exploratory data analysis (EDA)** to identify patterns and trends.  
-3. Applying **formal data analysis (FDA)** using Generalized Linear Models (GLM) to evaluate the relationship between film properties and IMDB ratings.  
-4. Conducting **model checking and diagnostics** to assess model validity and predictive accuracy.
+1. Performing **Data Wrangling** to clean and preprocess the dataset.  
+2. Conducting **Exploratory Data Analysis (EDA)** to identify patterns and trends.  
+3. Applying **Formal Data Analysis (FDA)** using Generalized Linear Models (GLM) to evaluate the relationship between film properties and IMDB ratings.  
+4. Conducting **Model Checking and Diagnostics** to assess model validity and predictive accuracy.
 
 ---
 
-## 3. Methodology
-This analysis was conducted using R, a powerful statistical programming language, and GitHub was team collaboration. The key steps involved:
+## Files and Structure
 
-### 3.1 Data Wrangling
+- **R Folder**:  
+  - `project_analysis.qmd`: Quarto markdown file for Generalized Linear Models (GLM), data wrangling, and analysis.  
+  - `project_report.pdf`: PDF version of the complete project report, including analysis and results.  
 
-- Cleaning and transforming the raw dataset.
-
-- Handling missing values and outliers.
-
-- Converting categorical variables (e.g., genre) into usable formats.
-
-### 3.2 Exploratory Data Analysis (EDA)
-
-Visualizing distributions, trends, and relationships.
-
-Understanding how attributes like budget, duration, and votes correlate with IMDB ratings.
-
-##3 3.3 Formal Data Analysis (FDA)
-
-Building and fitting a Generalized Linear Model (GLM) to predict IMDB ratings.
-
-Identifying key film attributes that influence ratings greater than seven.
-
-### 3.4 Model Checking and Diagnostics
-
-Evaluating model assumptions (linearity, residuals, etc.).
-
-Validating predictive accuracy and robustness of the model.
-
+- **Presentation**:  
+  - `project_presentation.pdf`: PDF version of the PowerPoint presentation summarizing the project objectives, methodology, key findings, and conclusions.  
 
 ---
 
-## 5. Key Results
+## Tools and Technologies
 
-Identified key predictors of IMDB ratings greater than seven, including votes, budget, and duration.
+- **Languages**: R  
+- **Techniques**: Generalized Linear Models (GLM), Predictive Modelling, Data Validation, Model Optimization, Statistical Diagnostics
+- **Version Control and Collaboration**: GitHub (used for team collaboration, version control, and project management)   
+- **Libraries**:  
+  - **R**:  
+    - `ggplot2`  
+    - `dplyr`  
+    - `tidyverse`  
+    - `gt`  
+    - `patchwork`  
+    - `gridExtra`  
+    - `moderndive`  
+    - `MASS`  
+    - `knitr`  
+    - `GGally`  
+    - `skimr`  
+    - `ggpubr`  
+    - `sjPlot`  
+    - `broom`  
+    - `pROC`  
+    - `janitor`
 
-Highlighted the influence of genre and release year on film ratings.
+## Insights
 
-Diagnosed model performance using residual analysis and validated predictions.
+The final GLM model (high_rating ~ length + budget + genre) was selected for its superior performance, with length, budget, and genre identified as significant predictors of IMDB ratings greater than 7. The model outperformed alternatives based on its lowest BIC, statistical significance, and robust residual diagnostics, while variables like release year added minimal predictive value.
 
----
-
-## 6. Tools and Technologies
-
-Programming Language: R
-
-Libraries: tidyverse, ggplot2, dplyr, caret, MASS
-
-Statistical Methods: Generalized Linear Models (GLM), diagnostics tools
-
-
-
-Note: This repository is for educational purposes only. The dataset is proprietary and provided exclusively for coursework.
